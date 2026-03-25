@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>freelance.guru | Web Wisdom</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="site-header">
+    <div class="container header-content">
+        <a href="index.html" class="logo-wrapper">
+            <img src="logo-guru.png" alt="freelance.guru" class="site-logo">
+            <span class="brand-name">freelance.guru</span>
+        </a>
+
+        <button class="mobile-toggle" onclick="toggleMenu()">☰</button>
+
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">The Guru Way</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        
+        <div class="header-cta">
+            <a href="contact.html" class="btn btn-primary">Start Project</a>
+        </div>
+    </div>
+</header>
+
+    <section class="hero-section">
+        <div class="container hero-grid">
+            <div class="hero-text animate-in">
+                <h1>Stop Wrestling With Code. <br>Summon The <span class="highlight">Guru</span>.</h1>
+                <p>We bring Silicon Valley-grade engineering to your project. Fast, transparent, and built to scale.</p>
+                <div class="mb-2">
+                    <a href="contact.html" class="btn btn-primary">Get Consultation</a>
+                    <a href="services.html" class="btn btn-secondary">See Services</a>
+                </div>
+                <div class="trust-badges">
+                    <span>★ 4.9/5 Rating</span>
+                    <span>✓ 100% Success Rate</span>
+                </div>
+            </div>
+            <div class="hero-img-container animate-in delay-1">
+                <img src="logo-guru.png" alt="Guru" class="hero-img">
+            </div>
+        </div>
+    </section>
+
+    <div class="tech-strip animate-in delay-2">
+        <div class="container tech-grid">
+            <div class="tech-item">⚡ React.js</div>
+            <div class="tech-item">🟢 Node.js</div>
+            <div class="tech-item">🛍️ Shopify</div>
+            <div class="tech-item">🎨 Figma</div>
+            <div class="tech-item">☁️ AWS</div>
+        </div>
+    </div>
+
+    <section class="section">
+        <div class="container animate-in">
+            <div class="text-center mb-3">
+                <h2>Our Core <span class="highlight">Powers</span></h2>
+            </div>
+            <div class="card-grid">
+                <div class="card">
+                    <h3>Web Development</h3>
+                    <p>Blazing fast websites built on React and Node.js. Clean code that ranks high.</p>
+                </div>
+                <div class="card">
+                    <h3>UI/UX Design</h3>
+                    <p>We design user flows that turn visitors into paying customers.</p>
+                </div>
+                <div class="card">
+                    <h3>E-Commerce</h3>
+                    <p>Robust Shopify stores. We handle the complex payments so you can sell.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section bg-white">
+        <div class="container animate-in">
+            <div class="text-center mb-3">
+                <h2>How It <span class="highlight">Works</span></h2>
+                <p>Simple. Efficient. No hidden steps.</p>
+            </div>
+            <div class="process-grid">
+                <div class="process-card">
+                    <div class="step-number">01</div>
+                    <div class="process-content">
+                        <h3>The Consultation</h3>
+                        <p>We discuss your vision and goals. No sales pitch, just strategy.</p>
+                    </div>
+                </div>
+                <div class="process-card">
+                    <div class="step-number">02</div>
+                    <div class="process-content">
+                        <h3>The Build</h3>
+                        <p>We code and design. You get weekly updates and transparent progress.</p>
+                    </div>
+                </div>
+                <div class="process-card">
+                    <div class="step-number">03</div>
+                    <div class="process-content">
+                        <h3>The Launch</h3>
+                        <p>We test everything, deploy to the cloud, and hand you the keys.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-banner animate-in">
+        <div class="container">
+            <h2>Ready to build?</h2>
+            <p>Skip the headache and hire the guru today.</p>
+            <a href="contact.html" class="btn btn-primary" style="margin-top: 20px;">Start My Project</a>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p class="copyright">&copy; 2026 freelance.guru. All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+    function toggleMenu() {
+        const nav = document.querySelector('.main-nav');
+        nav.classList.toggle('active');
+    }
+</script>
+
+</body>
+</html>

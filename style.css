@@ -1,0 +1,143 @@
+/* --- FREELANCE.GURU V5 (RESPONSIVE MOBILE FIXED) --- */
+
+:root {
+    --primary: #FF9F1C;
+    --primary-hover: #E0890E;
+    --secondary: #2C3E50;
+    --bg-body: #F9F9F7;
+    --white: #ffffff;
+    --text-main: #1a202c;
+    --text-muted: #64748b;
+    --font-heading: 'Poppins', sans-serif;
+    --font-body: 'Inter', sans-serif;
+    --shadow-sm: 0 4px 6px rgba(0,0,0,0.05);
+    --shadow-card: 0 10px 30px -5px rgba(0,0,0,0.08);
+    --radius: 16px;
+}
+
+/* RESET */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+    font-family: var(--font-body);
+    background-color: var(--bg-body);
+    color: var(--text-main);
+    line-height: 1.7;
+    overflow-x: hidden;
+}
+
+/* UTILITIES */
+.container { width: 90%; max-width: 1100px; margin: 0 auto; position: relative; }
+.text-center { text-align: center; }
+.highlight { color: var(--primary); }
+.mb-1 { margin-bottom: 1rem; } .mb-2 { margin-bottom: 2rem; } .mb-3 { margin-bottom: 3rem; }
+
+/* ANIMATIONS */
+@keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+.animate-in { opacity: 0; animation: fadeInUp 0.8s cubic-bezier(0.25, 0.8, 0.25, 1) forwards; }
+.delay-1 { animation-delay: 0.2s; } .delay-2 { animation-delay: 0.4s; }
+
+/* TYPOGRAPHY */
+h1, h2, h3 { font-family: var(--font-heading); color: var(--secondary); font-weight: 800; letter-spacing: -0.5px; }
+h1 { font-size: 3.5rem; line-height: 1.1; margin-bottom: 1.5rem; }
+h2 { font-size: 2.75rem; margin-bottom: 1rem; }
+h3 { font-size: 1.5rem; margin-bottom: 0.75rem; }
+p { color: var(--text-muted); font-size: 1.15rem; margin-bottom: 1.5rem; }
+
+/* BUTTONS */
+.btn {
+    display: inline-block; padding: 0.9rem 2.2rem; border-radius: 50px;
+    font-weight: 700; font-family: var(--font-heading); text-decoration: none;
+    transition: all 0.3s ease; border: 2px solid transparent; font-size: 1rem; cursor: pointer;
+}
+.btn-primary { background-color: var(--primary); color: var(--white); box-shadow: 0 10px 25px -5px rgba(255, 159, 28, 0.4); }
+.btn-primary:hover { background-color: var(--primary-hover); transform: translateY(-3px); }
+.btn-secondary { background: transparent; color: var(--secondary); border-color: #cbd5e1; }
+.btn-secondary:hover { border-color: var(--secondary); background: var(--white); }
+
+/* HEADER */
+.site-header {
+    padding: 0.8rem 0; position: fixed; width: 100%; top: 0; z-index: 1000;
+    background: rgba(249, 249, 247, 0.98); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+.header-content { display: flex; justify-content: space-between; align-items: center; }
+
+/* LOGO LOCKUP */
+.logo-wrapper { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+.site-logo { height: 70px; width: auto; display: block; transition: height 0.3s ease; }
+.brand-name { font-family: var(--font-heading); font-weight: 800; font-size: 1.6rem; color: var(--secondary); letter-spacing: -0.5px; padding-top: 2px; }
+
+/* NAV */
+.main-nav ul { display: flex; gap: 2.5rem; list-style: none; }
+.main-nav a { color: var(--secondary); font-weight: 600; text-decoration: none; font-size: 1rem; position: relative; }
+.main-nav a:hover, .main-nav a.active { color: var(--primary); }
+
+/* MOBILE MENU BUTTON (Default Hidden) */
+.mobile-toggle { display: none; font-size: 1.8rem; background: none; border: none; color: var(--secondary); cursor: pointer; }
+
+/* HERO */
+.hero-section { padding-top: 160px; padding-bottom: 100px; background: linear-gradient(135deg, rgba(255,255,255,0.8), rgba(249,249,247,0.9)); overflow: hidden; }
+.hero-grid { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 4rem; align-items: center; }
+.hero-img { width: 100%; max-width: 480px; }
+.trust-badges { display: flex; gap: 1.5rem; margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid rgba(0,0,0,0.08); font-size: 0.9rem; font-weight: 600; color: var(--secondary); }
+
+/* SECTIONS & CARDS */
+.section { padding: 80px 0; }
+.bg-white { background: var(--white); }
+.page-header { padding: 180px 0 60px 0; text-align: center; background: var(--white); margin-bottom: 40px; }
+.card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2.5rem; }
+.card { background: var(--white); padding: 2.5rem; border-radius: var(--radius); box-shadow: var(--shadow-card); transition: all 0.3s ease; border: 1px solid #f1f5f9; }
+.card:hover { transform: translateY(-10px); box-shadow: var(--shadow-card); border-color: rgba(255,159,28,0.3); }
+
+/* MISC SECTIONS (Tech/Process/Form) */
+.tech-strip { padding: 3rem 0; background: #fff; border-top: 1px solid #eee; border-bottom: 1px solid #eee; }
+.tech-grid { display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; opacity: 0.6; font-weight: 700; }
+.process-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-top: 3rem; text-align: center; }
+.step-number { font-size: 4rem; font-weight: 800; color: rgba(255,159,28,0.15); line-height: 1; margin-bottom: -20px; position: relative; z-index: 0; }
+.value-card { text-align: center; padding: 3rem 2rem; background: var(--bg-body); border-radius: var(--radius); }
+.form-container { max-width: 600px; margin: 0 auto; background: var(--white); padding: 3rem; border-radius: var(--radius); border: 1px solid #f1f5f9; }
+.form-control { width: 100%; padding: 0.9rem; border: 2px solid #e2e8f0; border-radius: 8px; }
+
+/* FOOTER */
+.site-footer { padding: 4rem 0 2rem; background: var(--white); text-align: center; border-top: 1px solid #f1f1f1; }
+.footer-links { display: flex; justify-content: center; gap: 2rem; margin: 1.5rem 0; list-style: none; }
+.footer-links a { color: var(--secondary); text-decoration: none; font-weight: 600; }
+.cta-banner { background: var(--secondary); padding: 5rem 0; text-align: center; color: var(--white); margin-top: 4rem; }
+.cta-banner h2 { color: var(--white); } .cta-banner p { color: rgba(255,255,255,0.8); }
+
+/* --- RESPONSIVE MOBILE FIX --- */
+@media (max-width: 968px) {
+    /* 1. Fix Logo Size */
+    .site-logo { height: 50px; }
+    .brand-name { font-size: 1.2rem; }
+
+    /* 2. Show Hamburger Button */
+    .mobile-toggle { display: block; z-index: 1001; }
+
+    /* 3. Hide Desktop Nav by default */
+    .main-nav {
+        position: absolute;
+        top: 100%; left: 0; width: 100%;
+        background: white;
+        padding: 2rem;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        display: none; /* Hidden */
+        flex-direction: column;
+        text-align: center;
+        border-bottom: 1px solid #eee;
+    }
+    
+    /* 4. Show Nav when Active */
+    .main-nav.active { display: flex; animation: fadeIn 0.3s ease; }
+    
+    .main-nav ul { flex-direction: column; gap: 1.5rem; }
+    .header-cta { display: none; } /* Hide CTA button on mobile, put inside nav if needed */
+    
+    /* 5. Fix Hero Layout */
+    h1 { font-size: 2.5rem; }
+    .hero-grid { grid-template-columns: 1fr; text-align: center; gap: 3rem; }
+    .hero-buttons { justify-content: center; display: flex; flex-direction: column; gap: 1rem; }
+    .hero-img { width: 60%; margin: 0 auto; }
+    .trust-badges { justify-content: center; }
+}

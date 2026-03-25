@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | freelance.guru</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="site-header">
+    <div class="container header-content">
+        <a href="index.html" class="logo-wrapper">
+            <img src="logo-guru.png" alt="freelance.guru" class="site-logo">
+            <span class="brand-name">freelance.guru</span>
+        </a>
+
+        <button class="mobile-toggle" onclick="toggleMenu()">☰</button>
+
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">The Guru Way</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        
+        <div class="header-cta">
+            <a href="contact.html" class="btn btn-primary">Start Project</a>
+        </div>
+    </div>
+</header>
+
+    <section class="page-header animate-in">
+        <div class="container">
+            <h1>Our <span class="highlight">Services</span></h1>
+            <p>From simple landing pages to complex applications.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container card-grid animate-in delay-1">
+            <div class="card">
+                <h3>Web Development</h3>
+                <p>Custom coding using the latest tech (React, Next.js). We build sites that load instantly.</p>
+            </div>
+            <div class="card">
+                <h3>UI/UX Design</h3>
+                <p>Beautiful interfaces prototyped in Figma. We make sure your users never get lost.</p>
+            </div>
+            <div class="card">
+                <h3>E-Commerce</h3>
+                <p>Full store setups on Shopify or WooCommerce. Payment gateways, inventory, and shipping.</p>
+            </div>
+            <div class="card">
+                <h3>Maintenance</h3>
+                <p>We keep your site secure, backed up, and updated so you don't have to worry.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container"><p class="copyright">&copy; 2026 freelance.guru.</p></div>
+    </footer>
+
+    <script>
+    function toggleMenu() {
+        const nav = document.querySelector('.main-nav');
+        nav.classList.toggle('active');
+    }
+</script>
+
+</body>
+</html>
