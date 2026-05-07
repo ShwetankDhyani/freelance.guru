@@ -4,73 +4,198 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Services | freelance.guru</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+    <meta name="description" content="Discover freelance.guru services: creative web development, UI/UX design, e-commerce implementation, and growth-focused support plans.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <header class="site-header">
-    <div class="container header-content">
-        <a href="index.html" class="logo-wrapper">
-            <img src="logo-guru.png" alt="freelance.guru" class="site-logo">
-            <span class="brand-name">freelance.guru</span>
-        </a>
-
-        <button class="mobile-toggle" onclick="toggleMenu()">☰</button>
-
-        <nav class="main-nav">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="about.html">The Guru Way</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-        
-        <div class="header-cta">
-            <a href="contact.html" class="btn btn-primary">Start Project</a>
+        <div class="container header-content">
+            <a href="index.html" class="logo-wrapper">
+                <img src="logo-guru.png" alt="freelance.guru" class="site-logo">
+                <span class="brand-name">freelance.guru</span>
+            </a>
+            <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html" class="active">Services</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="contact.html" class="btn btn-primary">Book a Discovery Call</a>
         </div>
-    </div>
-</header>
+    </header>
 
     <section class="page-header animate-in">
         <div class="container">
-            <h1>Our <span class="highlight">Services</span></h1>
-            <p>From simple landing pages to complex applications.</p>
+            <h1>Core Web Development + High-ROI Service Stack</h1>
+            <p>We build complete websites and web apps, plus the add-on services that create faster results and repeat business.</p>
         </div>
     </section>
 
     <section class="section">
         <div class="container card-grid animate-in delay-1">
             <div class="card">
-                <h3>Web Development</h3>
-                <p>Custom coding using the latest tech (React, Next.js). We build sites that load instantly.</p>
+                <h3>Custom Web Development (Core Service)</h3>
+                <p>End-to-end website and web app development: business sites, portals, dashboards, and custom workflows.</p>
+                <p class="small-note">Primary service for long-term, high-value projects</p>
             </div>
             <div class="card">
-                <h3>UI/UX Design</h3>
-                <p>Beautiful interfaces prototyped in Figma. We make sure your users never get lost.</p>
+                <h3>Lead-Gen Business Websites</h3>
+                <p>Fast, conversion-first websites for consultants, clinics, agencies, and local service businesses.</p>
+                <p class="small-note">Highest demand + fastest close in India market</p>
             </div>
             <div class="card">
-                <h3>E-Commerce</h3>
-                <p>Full store setups on Shopify or WooCommerce. Payment gateways, inventory, and shipping.</p>
+                <h3>Landing Pages for Ads</h3>
+                <p>Dedicated pages for Meta/Google campaigns with strong CTAs, WhatsApp click-to-chat, and form capture.</p>
+                <p class="small-note">Great for monthly retainers and A/B iteration</p>
             </div>
             <div class="card">
-                <h3>Maintenance</h3>
-                <p>We keep your site secure, backed up, and updated so you don't have to worry.</p>
+                <h3>E-commerce Store Launch</h3>
+                <p>Shopify/WooCommerce setup, payments, product pages, shipping rules, and conversion-ready checkout flows.</p>
+                <p class="small-note">In demand for D2C brands and Instagram sellers</p>
+            </div>
+            <div class="card">
+                <h3>AI Chatbot + FAQ Assistant</h3>
+                <p>Website assistant that answers common questions, qualifies leads, and drives inquiries 24/7.</p>
+                <p class="small-note">Low effort add-on with high perceived value</p>
+            </div>
+            <div class="card">
+                <h3>SEO and Speed Optimization</h3>
+                <p>Technical fixes, Core Web Vitals improvements, local SEO setup, and keyword-focused page structure.</p>
+                <p class="small-note">Easy upsell for older slow websites</p>
+            </div>
+            <div class="card">
+                <h3>Maintenance + Automation Retainers</h3>
+                <p>Monthly updates, backups, issue fixes, analytics reporting, and CRM/WhatsApp automation enhancements.</p>
+                <p class="small-note">Recurring revenue model with stable delivery</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section bg-white">
+        <div class="container animate-in">
+            <div class="text-center mb-3">
+                <h2>Most In-Demand Website Plans</h2>
+                <p>Simple offers you can confidently sell to clients in Pune and across India.</p>
+            </div>
+            <div class="pricing-grid">
+                <article class="pricing-card">
+                    <p class="pricing-label">Starter</p>
+                    <h3>Local Business Starter</h3>
+                    <p class="pricing-price">₹14,999</p>
+                    <p class="small-note">Best for freelancers and local businesses</p>
+                    <ul class="pricing-features">
+                        <li>Up to 5 pages</li>
+                        <li>Mobile-responsive design</li>
+                        <li>Contact + WhatsApp integration</li>
+                        <li>Google Maps + local SEO basics</li>
+                        <li>Delivery in 7-10 days</li>
+                    </ul>
+                    <div class="pricing-actions">
+                        <button class="btn btn-secondary js-pay-plan" data-plan="Starter - Local Business Website" data-amount="14999">Pay & Book Now</button>
+                        <a href="contact.html" class="btn btn-secondary">Discuss First</a>
+                    </div>
+                </article>
+
+                <article class="pricing-card featured-plan">
+                    <p class="pricing-label">Growth</p>
+                    <h3>Lead Generation Pro</h3>
+                    <p class="pricing-price">₹34,999</p>
+                    <p class="small-note">Most popular for service and B2B companies</p>
+                    <ul class="pricing-features">
+                        <li>Up to 12 pages</li>
+                        <li>Custom UI + trust-building sections</li>
+                        <li>Lead capture + WhatsApp + email flow</li>
+                        <li>Speed, SEO, and analytics dashboard</li>
+                        <li>Delivery in 2-3 weeks</li>
+                    </ul>
+                    <div class="pricing-actions">
+                        <button class="btn btn-primary js-pay-plan" data-plan="Growth - Lead Generation Website" data-amount="34999">Pay & Book Now</button>
+                        <a href="contact.html" class="btn btn-secondary">Discuss First</a>
+                    </div>
+                </article>
+
+                <article class="pricing-card">
+                    <p class="pricing-label">Premium</p>
+                    <h3>E-commerce or Premium Brand Site</h3>
+                    <p class="pricing-price">₹69,999</p>
+                    <p class="small-note">For scaling brands needing premium presence</p>
+                    <ul class="pricing-features">
+                        <li>Up to 20 pages</li>
+                        <li>Advanced interactions + premium design</li>
+                        <li>E-commerce or multi-funnel setup</li>
+                        <li>Events, heatmaps, and conversion tracking</li>
+                        <li>Delivery in 4-6 weeks</li>
+                    </ul>
+                    <div class="pricing-actions">
+                        <button class="btn btn-secondary js-pay-plan" data-plan="Premium - Ecommerce or Brand Website" data-amount="69999">Pay & Book Now</button>
+                        <a href="contact.html" class="btn btn-secondary">Discuss First</a>
+                    </div>
+                </article>
+            </div>
+            <p class="pricing-footnote">Need a custom web app, marketplace, or SaaS dashboard? We can scope and quote separately. Taxes are extra where applicable.</p>
+            <p id="payment-status" class="pricing-footnote"></p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container animate-in">
+            <div class="text-center mb-3">
+                <h2>Best Bang-for-Time Add-On Services</h2>
+                <p>These are quick-to-deliver upgrades clients happily pay for.</p>
+            </div>
+            <div class="card-grid">
+                <div class="card">
+                    <h3>Google Business Profile Setup</h3>
+                    <p>Local visibility setup with profile optimization, categories, and action-ready contact details.</p>
+                </div>
+                <div class="card">
+                    <h3>WhatsApp Lead Automation</h3>
+                    <p>Auto-replies, lead routing, and follow-up flow integration to improve response speed and conversions.</p>
+                </div>
+                <div class="card">
+                    <h3>Monthly Reporting Dashboard</h3>
+                    <p>Simple report of traffic, leads, and conversion trends for clients who want clear business outcomes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section bg-white">
+        <div class="container animate-in">
+            <div class="text-center mb-3">
+                <h2>Why Teams Choose Us</h2>
+            </div>
+            <div class="card-grid">
+                <div class="card">
+                    <h3>Senior-Led Execution</h3>
+                    <p>Technical decisions are reviewed by senior developers to ensure performance, maintainability, and quality.</p>
+                </div>
+                <div class="card">
+                    <h3>Clear Communication</h3>
+                    <p>You receive concise weekly updates, milestone reviews, and direct access to the people building your product.</p>
+                </div>
+                <div class="card">
+                    <h3>Business Context</h3>
+                    <p>We understand that deadlines, budgets, and outcomes matter as much as code quality.</p>
+                </div>
             </div>
         </div>
     </section>
 
     <footer class="site-footer">
-        <div class="container"><p class="copyright">&copy; 2026 freelance.guru.</p></div>
+        <div class="container footer-content">
+            <p class="copyright">&copy; 2026 freelance.guru. All rights reserved.</p>
+        </div>
     </footer>
-
-    <script>
-    function toggleMenu() {
-        const nav = document.querySelector('.main-nav');
-        nav.classList.toggle('active');
-    }
-</script>
-
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

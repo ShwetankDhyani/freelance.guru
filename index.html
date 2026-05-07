@@ -3,83 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>freelance.guru | Web Wisdom</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+    <title>freelance.guru | Creative Web Development Company</title>
+    <meta name="description" content="freelance.guru builds creative, high-performing websites and web apps for ambitious brands. Strategy, design, development, and growth support.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <header class="site-header">
-    <div class="container header-content">
-        <a href="index.html" class="logo-wrapper">
-            <img src="logo-guru.png" alt="freelance.guru" class="site-logo">
-            <span class="brand-name">freelance.guru</span>
-        </a>
-
-        <button class="mobile-toggle" onclick="toggleMenu()">☰</button>
-
-        <nav class="main-nav">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="about.html">The Guru Way</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-        
-        <div class="header-cta">
-            <a href="contact.html" class="btn btn-primary">Start Project</a>
+        <div class="container header-content">
+            <a href="index.html" class="logo-wrapper">
+                <img src="logo-guru.png" alt="freelance.guru" class="site-logo">
+                <span class="brand-name">freelance.guru</span>
+            </a>
+            <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="contact.html" class="btn btn-primary">Book a Discovery Call</a>
         </div>
-    </div>
-</header>
+    </header>
 
     <section class="hero-section">
         <div class="container hero-grid">
             <div class="hero-text animate-in">
-                <h1>Stop Wrestling With Code. <br>Summon The <span class="highlight">Guru</span>.</h1>
-                <p>We bring Silicon Valley-grade engineering to your project. Fast, transparent, and built to scale.</p>
+                <span class="eyebrow">Creative Engineering for Bold Brands</span>
+                <h1>Where clean code meets creative craft.</h1>
+                <p>We partner with startups, agencies, and established brands to design, build, and scale high-performing digital products. Every project is strategy-led, conversion-focused, and engineered for long-term maintainability.</p>
                 <div class="mb-2">
-                    <a href="contact.html" class="btn btn-primary">Get Consultation</a>
-                    <a href="services.html" class="btn btn-secondary">See Services</a>
+                    <a href="contact.html" class="btn btn-primary">Start Your Project</a>
+                    <a href="services.html" class="btn btn-secondary">Explore Services</a>
                 </div>
                 <div class="trust-badges">
-                    <span>★ 4.9/5 Rating</span>
-                    <span>✓ 100% Success Rate</span>
+                    <span>120+ projects delivered</span>
+                    <span>Clients across 8 countries</span>
+                    <span>Average rating: 4.9/5</span>
                 </div>
             </div>
-            <div class="hero-img-container animate-in delay-1">
-                <img src="logo-guru.png" alt="Guru" class="hero-img">
+            <div class="hero-panel animate-in delay-1">
+                <h3>What you get with us</h3>
+                <ul>
+                    <li>Dedicated project manager and senior engineering oversight</li>
+                    <li>Weekly sprint updates with clear milestones</li>
+                    <li>UX, SEO, and performance best practices built in</li>
+                    <li>Post-launch support and optimization roadmap</li>
+                </ul>
             </div>
         </div>
     </section>
 
-    <div class="tech-strip animate-in delay-2">
+    <section class="tech-strip animate-in delay-2">
         <div class="container tech-grid">
-            <div class="tech-item">⚡ React.js</div>
-            <div class="tech-item">🟢 Node.js</div>
-            <div class="tech-item">🛍️ Shopify</div>
-            <div class="tech-item">🎨 Figma</div>
-            <div class="tech-item">☁️ AWS</div>
+            <div class="tech-item">React</div>
+            <div class="tech-item">Next.js</div>
+            <div class="tech-item">Node.js</div>
+            <div class="tech-item">Shopify</div>
+            <div class="tech-item">WordPress</div>
+            <div class="tech-item">AWS</div>
         </div>
-    </div>
+    </section>
 
     <section class="section">
         <div class="container animate-in">
             <div class="text-center mb-3">
-                <h2>Our Core <span class="highlight">Powers</span></h2>
+                <h2>Services Built for Real Business Outcomes</h2>
+                <p>Our core business is full web development, supported by high-demand services that improve conversion and ROI.</p>
             </div>
             <div class="card-grid">
                 <div class="card">
-                    <h3>Web Development</h3>
-                    <p>Blazing fast websites built on React and Node.js. Clean code that ranks high.</p>
+                    <h3>Custom Web Development</h3>
+                    <p>Complete website and web app builds for startups, agencies, and growing businesses.</p>
                 </div>
                 <div class="card">
-                    <h3>UI/UX Design</h3>
-                    <p>We design user flows that turn visitors into paying customers.</p>
+                    <h3>Lead Generation Websites</h3>
+                    <p>High-converting websites for local and service businesses with WhatsApp and form capture built in.</p>
                 </div>
                 <div class="card">
-                    <h3>E-Commerce</h3>
-                    <p>Robust Shopify stores. We handle the complex payments so you can sell.</p>
+                    <h3>Landing Pages for Ads</h3>
+                    <p>Conversion-focused pages for Meta and Google campaigns to improve lead quality and ROI.</p>
+                </div>
+                <div class="card">
+                    <h3>E-commerce + Automation</h3>
+                    <p>Store setup, payment gateway integration, and backend automation to reduce manual work.</p>
                 </div>
             </div>
         </div>
@@ -88,30 +101,52 @@
     <section class="section bg-white">
         <div class="container animate-in">
             <div class="text-center mb-3">
-                <h2>How It <span class="highlight">Works</span></h2>
-                <p>Simple. Efficient. No hidden steps.</p>
+                <h2>How We Deliver Projects</h2>
+                <p>A proven process designed to minimize risk and maximize speed-to-launch.</p>
             </div>
             <div class="process-grid">
                 <div class="process-card">
                     <div class="step-number">01</div>
                     <div class="process-content">
-                        <h3>The Consultation</h3>
-                        <p>We discuss your vision and goals. No sales pitch, just strategy.</p>
+                        <h3>Discovery and Planning</h3>
+                        <p>We align on goals, users, scope, timeline, and measurable success metrics before design and build begin.</p>
                     </div>
                 </div>
                 <div class="process-card">
                     <div class="step-number">02</div>
                     <div class="process-content">
-                        <h3>The Build</h3>
-                        <p>We code and design. You get weekly updates and transparent progress.</p>
+                        <h3>Design and Development</h3>
+                        <p>Design and engineering run in structured sprints with transparent progress tracking and stakeholder reviews.</p>
                     </div>
                 </div>
                 <div class="process-card">
                     <div class="step-number">03</div>
                     <div class="process-content">
-                        <h3>The Launch</h3>
-                        <p>We test everything, deploy to the cloud, and hand you the keys.</p>
+                        <h3>Launch and Optimization</h3>
+                        <p>After QA and deployment, we support your team with monitoring, maintenance, and conversion improvements.</p>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container animate-in">
+            <div class="text-center mb-3">
+                <h2>Recent Engagements</h2>
+            </div>
+            <div class="card-grid">
+                <div class="card">
+                    <h3>B2B SaaS Website Redesign</h3>
+                    <p>Rebuilt conversion journeys and improved page speed, increasing demo requests by 41% in 90 days.</p>
+                </div>
+                <div class="card">
+                    <h3>D2C E-commerce Migration</h3>
+                    <p>Migrated storefront to Shopify with custom bundles and automation, reducing manual operations by 60%.</p>
+                </div>
+                <div class="card">
+                    <h3>Internal Operations Dashboard</h3>
+                    <p>Developed a role-based web app to centralize reporting, cutting weekly admin time by 12 hours.</p>
                 </div>
             </div>
         </div>
@@ -119,23 +154,17 @@
 
     <section class="cta-banner animate-in">
         <div class="container">
-            <h2>Ready to build?</h2>
-            <p>Skip the headache and hire the guru today.</p>
-            <a href="contact.html" class="btn btn-primary" style="margin-top: 20px;">Start My Project</a>
+            <h2>Need a reliable web partner, not just a template team?</h2>
+            <p>Tell us your goals and we will map the right delivery plan for your business.</p>
+            <a href="contact.html" class="btn btn-primary cta-button">Schedule a Consultation</a>
         </div>
     </section>
 
     <footer class="site-footer">
-        <div class="container">
+        <div class="container footer-content">
             <p class="copyright">&copy; 2026 freelance.guru. All rights reserved.</p>
         </div>
     </footer>
-    <script>
-    function toggleMenu() {
-        const nav = document.querySelector('.main-nav');
-        nav.classList.toggle('active');
-    }
-</script>
-
+    <script src="script.js"></script>
 </body>
 </html>
